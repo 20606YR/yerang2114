@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.menu_wrap .menu {
+    /* 메인메뉴 사이의 간격을 0으로 변경*/
+    font-size: 0;
+}
+.menu_wrap .menu > li {
+    display: inline-block;
+    width: 100px;
+    background: #ddd;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: top;
+}
+.menu_wrap .menu a {
+    display: block;
+    /* 메뉴(.menu)의 자손 링크에 상하패딩 : 10px */
+    padding: 10px 0;
+}
+.menu_weap .menu a:hover {
+    /* 자손 링크에 마우스 올리면 */
+    /* 배경색 설정하고 글자는 흰색으로 변경 */
+    background: #325cb2;
+    color: #fff
+}
+.menu_wrap .menu > li:hover > .sub_m {
+    /* 메인메뉴의 항목에 마우스를 올렸을떄
+        서브 메뉴들에게 작동 */
+    display: block;
+    /* displat:none을 해제하고 siplat:block으로 보이기 */
+}
+.menu_wrap .sub_m {
+    display: none;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>자바스크립트 변수</title>
+</head>
+<body>
+    <h2>변수의 선언과 초기화</h2>
+    <p id="date"></p>
+    
+    <script>
+        let month;      // 변수의 선언(기억장소에 저장공간을 만듬)
+        let date = 25;  // 변수의 선언과 동시에 초기화(만들면서 값을 저장)
+        month = 12;     // 변수의 초기화(변수에 값을 처음 집어넣는 것)
+        // 변할 수 있는 값(변수), 상수(항상 같은 값)
+        
+        document.getElementById("date").innerHTML = 
+            "크리스마스는 " + month + "월 " + date + "일입니다.";
+    </script>
+</body>
+</html>

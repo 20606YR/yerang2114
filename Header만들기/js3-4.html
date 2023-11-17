@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript DataType</title>
+</head>
+<body>
+    
+    <h1>typeof 연산자</h1>
+    <p id="result"></p>
+    
+    <script>
+        document.getElementById("result").innerHTML = (typeof 10) + "<br>";         //number(숫자)
+        document.getElementById("result").innerHTML += (typeof "문자열") + "<br>";   //string(문자열)
+        document.getElementById("result").innerHTML += (typeof true) + "<br>";      //boolean(참거짓)
+        document.getElementById("result").innerHTML += (typeof undefined) + "<br>"; //undefined(정의안함)
+        document.getElementById("result").innerHTML += (typeof null);               //objrct(객세)
+        
+        let num;    //선언만 하고 초기화를 안함
+        let str = null;    //값을 없음(null)로 정해줌
+        document.getElementById("resule").innerHTML += (typeof num)+ "<br>"+(typeof str)+"<br>"+(typeof secondNum);
+    </script>
+    
+</body>
+</html>
