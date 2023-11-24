@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Fumction</title>
+</head>
+<body>
+    <h1>값으로서의 함수</h1>
+    
+    <script>
+        function spr(x) {       // 제곱의 값을 구하는 함수 spr를 정의함.
+            return x * x;
+        }
+        let sprNum = spr;       // 변수 sprNum에 함수 spr을 할당함.
+        
+        document.write(spr(4) + "<br>"); // 함수 spr을 호출함.
+        document.write(sprNum(4));      // 변수 sprNum를 함수처럼 호출함.
+    </script>
+</body>
+</html>
